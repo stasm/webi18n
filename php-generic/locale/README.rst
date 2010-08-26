@@ -7,9 +7,11 @@ First steps
    name and version.
 
 
+Updating localization files
+===========================
+
 Steps to update the localization files in case 
 strings have changed in the source code:
-==============================================
 
 1) ``./locale/extract.sh .``
 

@@ -40,6 +40,7 @@ the webi18n library to *../webi18n*.
    * http://php.net/manual/en/book.gettext.php
    * https://developer.mozilla.org/en/gettext
 
+
 7. Read *locale/README*.
 
    This will make you familiar with the localization process.
@@ -64,11 +65,11 @@ the webi18n library to *../webi18n*.
 
 10. ``./locale/compile.sh``
 
-   When the localization is completed, issue this to compile the *\*.po* files 
-   to *\*.mo* files. These are used by the actual gettext module on the server.
+    When the localization is completed, issue this to compile the *\*.po* files 
+    to *\*.mo* files. These are used by the actual gettext module on the server.
 
-   It's usually a good idea to hok the *locale/compile.sh* script to a cronjob
-   running every 15 minutes or so on the staging server, together with an 
-   ``svn update`` of the repository with the localization files. It's also 
-   recommended not to do this on the production server.
+    It's usually a good idea to hok the *locale/compile.sh* script to a cronjob
+    running every 15 minutes or so on the staging server, together with an 
+    ``svn update`` of the repository with the localization files. It's also 
+    recommended not to do this on the production server.
 
