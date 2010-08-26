@@ -1,0 +1,8 @@
+
+RewriteEngine on
+
+# Detect locale code:
+# /en-US/requested_page/ becomes /requested_page/?locale=en-US
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(\w{2,3}(?:-\w{2}(?:-mac)?)?)?\/?(.*)$ $2?locale=$1 [L]
