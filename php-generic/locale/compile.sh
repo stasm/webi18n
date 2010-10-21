@@ -7,7 +7,7 @@ then
     touch $lockfile
     locale_root=`dirname $0`
     echo "Compiling all locales..."
-    for i in `find $locale_root -type f -name "messages.po"`; do
+    for i in `find $locale_root -type f -name "*.po"`; do
         dir=`dirname $i`
         stem=`basename $i .po`
         echo -n "Compiling ${i} ... "
