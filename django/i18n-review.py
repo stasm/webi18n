@@ -5,6 +5,9 @@
 #
 # A script for checking templates in a django project for any hardcoded strings
 #
+#
+# todo:
+#  - make it pull dir paths from settings.py
 ###
 
 import re
