@@ -21,7 +21,7 @@ import sys
 #
 ###
 patterns = {
-    'block_tag': re.compile('{%\s*(?P<id>\w+)\s*(?P<data>.*?)%}', re.M|re.S|re.U|re.I),
+    'block_tag': re.compile('{%-?\s*(?P<id>\w+)\s*(?P<data>.*?)%}', re.M|re.S|re.U|re.I),
     'variable_tag': re.compile('{{\s*(?P<content>.+?)\s*}}'),
     'comment_tag': re.compile('{#.*?#}', re.S|re.M),
     'blocktrans_tag': re.compile('{%\s*blocktrans.*?endblocktrans\s*%}', re.S),
